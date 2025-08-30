@@ -1,0 +1,26 @@
+{
+  "name": "estatepoint",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon api/index.js",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vedant2606-dev/EstatePoint.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/vedant2606-dev/EstatePoint/issues"
+  },
+  "homepage": "https://github.com/vedant2606-dev/EstatePoint#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
