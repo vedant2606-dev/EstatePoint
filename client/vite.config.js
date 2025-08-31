@@ -11,6 +11,9 @@ export default defineConfig({
         secure: false,
       },
     },
+    headers: {
+      "Cross-Origin-Opener-Policy": "same-origin-allow-popups",
+    },
   },
   plugins: [react(), tailwindcss()],
 });
