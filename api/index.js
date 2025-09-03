@@ -12,7 +12,7 @@ dotenv.config();
 const app = express();
 app.use(
   cors({
-    origin: "*", // your React app URL
+    origin: "http://localhost:5173", // your React app URL
     credentials: true, // allow cookies to be sent
   })
 );
