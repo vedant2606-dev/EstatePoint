@@ -236,7 +236,10 @@ const Profile = () => {
       <p className="text-green-700">
         {updateSuccess ? "User is updated successfully" : " "}
       </p>
-      <button onClick={handleShowListings} className="text-green-700 w-full">
+      <button
+        onClick={handleShowListings}
+        className="text-green-700 w-full cursor-pointer"
+      >
         Show Listings
       </button>
       <p className="text-red-700 mt-5">
@@ -272,9 +275,11 @@ const Profile = () => {
                 >
                   Delete
                 </button>
-                <button className="text-green-700 uppercase cursor-pointer">
-                  Edit
-                </button>
+                <Link to={`/update-listing/${listing._id}`}>
+                  <button className="text-green-700 uppercase cursor-pointer">
+                    Edit
+                  </button>
+                </Link>
               </div>
             </div>
           ))}
