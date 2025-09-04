@@ -16,5 +16,7 @@ export default defineConfig({
       "Cross-Origin-Opener-Policy": "same-origin-allow-popups",
     },
   },
-  plugins: [react(), tailwindcss()],
+  plugins: [react(), tailwindcss(), ],
 });
+
+// '@tailwindcss/line-clamp'
