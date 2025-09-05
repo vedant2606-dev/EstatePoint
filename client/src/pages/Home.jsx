@@ -72,13 +72,13 @@ const Home = () => {
           offerListings.length > 0 &&
           offerListings.map((listing) => (
             <SwiperSlide key={listing._id}>
-              <div
-                style={{
-                  background: `url(${listing.imageUrls[0]})center no-repeat`,
-                  backgroundSize: "cover",
-                }}
-                className="h-[500px]"
-              ></div>
+              <div className="h-[500px] w-full">
+                <img
+                  src={listing.imageUrls[0]}
+                  alt="Listing"
+                  className="w-full h-full object-cover object-center"
+                />
+              </div>
             </SwiperSlide>
           ))}
       </Swiper>
